@@ -3,7 +3,7 @@
 /**
  * This script is used to reset the project to a blank state.
  * It deletes or moves the /app, /components, /hooks, /scripts, and /constants directories to /app-example based on user input and creates a new /app directory with an index.tsx and _layout.tsx file.
- * You can remove the `reset-project` script from package.json and safely delete this file after running it.
+ * jct added it here for the sake...gratitude to the HNG team tho for the efforts.
  */
 
 const fs = require("fs");

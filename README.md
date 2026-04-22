@@ -1,50 +1,142 @@
-# Welcome to your Expo app 👋
+# Expense Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A comprehensive financial management application built with React Native and Expo that helps users track transactions, manage budgets, and visualize their spending patterns.
 
-## Get started
+## Features
 
-1. Install dependencies
+### ✅ Core Functionalities
 
-   ```bash
-   npm install
-   ```
+#### 1. **Transaction Management**
+- Log income and expenses
+- Categorize transactions (salary, bonus, food, transport, entertainment, utilities, shopping, healthcare, education, rent, other)
+- Add descriptions and notes
+- View transaction history with detailed information
+- Delete transactions
 
-2. Start the app
+#### 2. **Security**
+- Facial liveness verification for accessing sensitive dashboard
+- Real-time user instructions during verification
+- Proper handling of success and failure states
+- Verification persistence (1-hour session)
+- Recovery suggestions for failed attempts
 
-   ```bash
-   npx expo start
-   ```
+#### 3. **Financial Overview**
+- Real-time balance display
+- Income and expense summaries
+- Budget management system
+- Set budgets for specific categories
+- Monthly and yearly budget periods
+- Budget status tracking (percentage used, amount remaining, exceeded alerts)
 
-In the output, you'll find options to open the app in a
+#### 4. **Recurring Transactions**
+- Set up recurring transactions (daily, weekly, monthly, yearly)
+- Automatic generation of transactions on due dates
+- Configurable start and end dates
+- Edit and delete recurring transactions
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+#### 5. **Data Visualization**
+- Analytics dashboard with charts
+- Monthly trend visualization (income vs expenses)
+- Category breakdown with horizontal bar charts
+- Expense and income distribution
+- Visual spending patterns
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+#### 6. **Data Persistence**
+- All data stored locally on device using AsyncStorage
+- No backend required
+- Data persists when app is closed and reopened
 
-## Get a fresh project
+#### 7. **Bonus Features**
 
-When you're ready, run:
+**Data Export:**
+- Export transactions as CSV
+- Export financial reports
+- Share exported files
 
+**Currency Formatting:**
+- Support for multiple currencies (USD, EUR, GBP, JPY, INR, NGN, AUD, CAD)
+- Proper currency symbol display
+- Locale-specific formatting
+- Thousands separator handling
+
+## Tech Stack
+
+- **Framework:** React Native with Expo
+- **State Management:** Zustand
+- **Storage:** AsyncStorage
+- **Navigation:** Expo Router
+- **UI Components:** React Native (native)
+- **Icons:** Material Community Icons
+- **Charts:** Custom chart components
+- **Data Export:** CSV and text-based report generation
+
+## Installation & Setup
+
+1. Install dependencies:
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Start the development server:
+```bash
+npm start
+```
 
-## Learn more
+3. Run on specific platform:
+```bash
+npm run android    # Android
+npm run ios        # iOS
+npm run web        # Web
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Usage
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Adding a Transaction
+1. Navigate to "Add Transaction" from dashboard or explore tab
+2. Select transaction type (income/expense)
+3. Enter amount and description
+4. Select category
+5. Tap "Add Transaction"
 
-## Join the community
+### Managing Budgets
+1. Go to "Budgets" from dashboard
+2. Tap "+" to create a new budget
+3. Select category and set limit
+4. Choose period (monthly/yearly)
+5. Monitor budget status on the budgets screen
 
-Join our community of developers creating universal apps.
+### Viewing Analytics
+1. Navigate to "Analytics"
+2. View monthly trends
+3. See category breakdowns
+4. Track spending patterns
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Exporting Data
+1. Go to "Settings"
+2. Choose "Export as CSV" or "Export as Report"
+3. Select save location or share directly
+
+### Facial Verification
+1. On first app launch, complete facial liveness verification
+2. Follow on-screen instructions
+3. Verification is valid for 1 hour
+4. Re-verify if needed after session expires
+
+## Project Structure
+
+All source code is contained in the app directory with screens, components, services, and utilities organized by feature.
+
+## Features Highlights
+
+- **Real-time Updates:** Balance updates immediately after transactions
+- **Data Persistence:** All transactions stored locally
+- **User-Friendly Interface:** Intuitive navigation with dark mode support
+- **Security:** Facial liveness verification for dashboard access
+- **Multi-Currency Support:** Format amounts in various currencies
+
+## Supported Currencies
+
+USD, EUR, GBP, JPY, INR, NGN, AUD, CAD
+
+## Version
+1.0.0
