@@ -1,0 +1,11 @@
+{
+  "android": {
+    "package": "com.anonymous.hng2"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "c48ea87c-1673-4caf-8d6e-f3655bbfa8c8"
+    }
+  },
+  "owner": "jef_ry"
+}

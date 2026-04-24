@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 943d0c80ff4541c4afd58fa67849350410310f9e Gfry1234 <iamgfry@yahoo.com> 1776799540 +0300	commit (initial): Initial commit
+943d0c80ff4541c4afd58fa67849350410310f9e 943d0c80ff4541c4afd58fa67849350410310f9e Gfry1234 <iamgfry@yahoo.com> 1776889645 +0300	Branch: renamed refs/heads/master to refs/heads/main
+943d0c80ff4541c4afd58fa67849350410310f9e 573894cb3d464b160b1d760e1f652bed361ddcf7 Gfry1234 <iamgfry@yahoo.com> 1776890489 +0300	commit: the shift from adroid studio local to eas build clod
+573894cb3d464b160b1d760e1f652bed361ddcf7 03fbb9709cddab4a251627d7797a60cdcd3c934d Gfry1234 <iamgfry@yahoo.com> 1776893788 +0300	commit: versional issues
+03fbb9709cddab4a251627d7797a60cdcd3c934d 54254dec9d47f2f0ae22e347ab3f0dc35b7ccff4 Gfry1234 <iamgfry@yahoo.com> 1776920107 +0300	commit: new trailing code modified since mixed with old one cleanup done
+54254dec9d47f2f0ae22e347ab3f0dc35b7ccff4 382bdc77d90441761262addfb46a5f347894baf7 Gfry1234 <iamgfry@yahoo.com> 1776950510 +0300	commit: new trailing code modified since mixed with old one cleanup done and reorganised moving from root to subfolder since andriod studio and EAS wldnt compile and install the necessary dependencieds
+382bdc77d90441761262addfb46a5f347894baf7 6aaaf6b3ac8f63e10eef2280f5c7fad41ed42e5f Gfry1234 <iamgfry@yahoo.com> 1776951400 +0300	commit: fix: updated eas project id
+6aaaf6b3ac8f63e10eef2280f5c7fad41ed42e5f a51af643e3a48b29d956a5573923a8e0118adc4b Gfry1234 <iamgfry@yahoo.com> 1776973812 +0300	commit: new changes
+a51af643e3a48b29d956a5573923a8e0118adc4b b9d7e0254157d38ddf0c719b9ef5c9053c6bf08e Gfry1234 <iamgfry@yahoo.com> 1777013564 +0300	commit: metro
