@@ -1,19 +1,19 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  useColorScheme,
-  ScrollView,
-  RefreshControl,
-  TouchableOpacity,
-} from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { TransactionItem } from '@/components/common/TransactionItem';
 import { useAppStore } from '@/context/appStore';
 import { CurrencyUtils } from '@/utils/currencyUtils';
 import { TransactionUtils } from '@/utils/transactionUtils';
-import { TransactionItem } from '@/components/common/TransactionItem';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
+import React, { useCallback, useEffect, useState } from 'react';
+import {
+    RefreshControl,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    useColorScheme,
+    View,
+} from 'react-native';
 
 export const DashboardScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const colorScheme = useColorScheme();
@@ -22,17 +22,17 @@ export const DashboardScreen: React.FC<{ navigation: any }> = ({ navigation }) =
 
   const { transactions, summary, livenessVerified, initialize, user } = useAppStore();
 
-  useFocusEffect(
-    useCallback(() => {
-      if (!livenessVerified) {
-        navigation.navigate('liveness');
-      }
-    }, [livenessVerified, navigation])
-  );
-
   useEffect(() => {
     initialize();
-  }, []);
+  }, [initialize]);
+
+  useFocusEffect(
+    useCallback(() => {
+      if (!livenessVerified && summary) {
+        navigation.navigate('liveness');
+      }
+    }, [livenessVerified, navigation, summary])
+  );
 
   const onRefresh = useCallback(() => {
     setRefreshing(true);
